@@ -10,45 +10,47 @@
 
 	<name>concurrent-collections</name>
 	<url>https://github.com/vmlens/concurrent-collections</url>
+	<description>This project contains a concurrent hash map which is optimized for the method computeIfAbsent.</description>
+	
 
-    <licenses>
-      <license>
-          <name>Apache License 2.0</name>
-          <url>https://www.apache.org/licenses/LICENSE-2.0</url>
-      </license>
-   </licenses>
-   
-   <organization>
-    <name>vmlens</name>
-    <url>https://www.vmlens.com</url>
-  </organization>
-   
-      <developers>
-       <developer>
-         <name>Thomas Krieger</name>
-         <email>thomas.krieger@vmlens.com</email>
-         <organization>vmlens</organization>
-         <organizationUrl>https://www.vmlens.com</organizationUrl>
-      </developer>
-    </developers>
-    
-    <scm>
-         <connection>scm:git:git@github.com:vmlens/concurrent-collections.git</connection>
-         <developerConnection>scm:git:git@github.com:vmlens/concurrent-collections.git</developerConnection>
-         <url>git@github.com:vmlens/concurrent-collections.git</url>
-    </scm>
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>vmlens</name>
+		<url>https://www.vmlens.com</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Thomas Krieger</name>
+			<email>thomas.krieger@vmlens.com</email>
+			<organization>vmlens</organization>
+			<organizationUrl>https://www.vmlens.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git@github.com:vmlens/concurrent-collections.git</connection>
+		<developerConnection>scm:git:git@github.com:vmlens/concurrent-collections.git</developerConnection>
+		<url>git@github.com:vmlens/concurrent-collections.git</url>
+	</scm>
 
 
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<pluginRepositories>
-  		<pluginRepository>
-    		<id>vmlens</id>
-    		<url>https://vmlens.com/download</url>
-  		</pluginRepository>
+		<pluginRepository>
+			<id>vmlens</id>
+			<url>https://vmlens.com/download</url>
+		</pluginRepository>
 	</pluginRepositories>
 
 	<dependencies>
@@ -125,6 +127,20 @@
 				<configuration>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 
 
 		</plugins>
