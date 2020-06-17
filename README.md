@@ -15,4 +15,5 @@ Use the following dependency for maven:
   <version>1.0.0</version>
 </dependency>
 
-You can download the binaries [from maven central here](https://search.maven.org/remotecontent?filepath=com/vmlens/concurrent-collections/1.0.0/concurrent-collections-1.0.0.jar).
+You can download the binaries [from maven central here]
+(https://search.maven.org/remotecontent?filepath=com/vmlens/concurrent-collections/1.0.0/concurrent-collections-1.0.0.jar)
